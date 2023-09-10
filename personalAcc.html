@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/personAcc.css">
+    <title>MeetMISIS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="text__header">Личный кабинет</div>
+        <div class="lang">
+            <p class="text__lang">Язык:</p> 
+            <select class="select__header">
+                <option class="option__header" label="Русский" value="1" selected><a href="#">Русский</a></option>
+                <option class="option__header"><a href="#">English</a></option>
+            </select>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="left-side">
+            <div class="text__left-side">Личные данные:</div>
+            <div class="block__left-side">
+                <div class="inf__block">
+                    <div class="avatar"></div>
+                    <form class="form">
+                        <div class="item__inf">
+                            <label class="item-label__inf" for="userNickname">Ник:</label>
+                            <input class="item-input__inf" type="text" name="nickname" id="userNickname">
+                        </div>
+                        <div class="item__inf">
+                            <label class="item-label__inf" for="userInstitut">Институт:</label>
+                            <input class="item-input__inf" type="text" name="institut" id="userInstitut">
+                        </div>
+                        <div class="item__inf">
+                            <label class="item-label__inf" for="userFaculty">Напрвление:</label>
+                            <input class="item-input__inf" type="text" name="faculty" id="userFaculty">
+                        </div>
+                        <div class="item__inf">
+                            <label class="item-label__inf" for="userCourse">Курс:</label>
+                            <input class="item-input__inf" type="text" name="course" id="userCourse">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tags__block">
+                    <div class="text__tags">Впишите в это поле хэштеги, которые соответствуют вашим увлечениям:</div>
+                    <textarea name="tags" id="tags" cols="28" rows="5" ></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="text__right-side">Анкета:</div>
+            <div class="block__right-side">
+                <div class="clubs">
+                    <div class="text__item">Ваше участие в клубах МИСИС:</div>
+                    <form action="" method="" class="form__clubs">
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubSTO" >
+                            <label for="clubSTO">Студенческое научное общество</label>
+                        </div>
+                        
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubMEDIA" >
+                            <label for="clubMEDIA">MISIS Media</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubSports" >
+                            <label for="clubSSports">MISIS eSports</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubArt">
+                            <label for="clubArt">Объединение «Арт Лаб»</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubTourist" >
+                            <label for="clubTourist">Туристический клуб</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubITAM">
+                            <label for="clubITAM">Объединение «ITAM»</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubTech" >
+                            <label for="clubTech">Инкубатор технологических проектов</label>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="sports">
+                    <div class="text__item">Спорт в МИСиС:</div>
+                    <form action="" method="" class="form__sports">
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubMEDIA">
+                            <label for="clubMEDIA">волейбол</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubSports" >
+                            <label for="clubSSports">футбол</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubArt" >
+                            <label for="clubArt">баскетбол</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubTourist" >
+                            <label for="clubTourist">плавание</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubITAM" >
+                            <label for="clubITAM">бокс</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubTech" >
+                            <label for="clubTech">аэробика</label>
+                        </div>
+                        <div class="club">
+                            <input type="checkbox" name="club" id="clubTech" >
+                            <label for="clubTech">тренажерный зал</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="meetings">
+                    <div class="text__item">Основная цель вашей встречи?</div>
+                    <form action="" method="" class="form__communication">
+                        <div class="item__form-communication">
+                            <label for="communicate">Общение</label>
+                            <select name="communicate" id="communicate">
+                                <option value="">онлайн</option>
+                                <option value="">оффлайн</option>
+                            </select>
+                        </div>
+
+                        <div class="item__form-communication">
+                            <label for="education">Учёба</label>
+                            <select name="education" id="education">
+                                <option value="">онлайн</option>
+                                <option value="">оффлайн</option>
+                            </select>
+                        </div>
+
+                        <div class="item__form-communication">
+                            <label for="activities">Развлечение</label>
+                            <select name="activities" id="activities">
+                                <option value="">онлайн</option>
+                                <option value="">оффлайн</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

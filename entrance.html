@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/entr.css">
+    <title>MeetMISIS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="lang">
+            <p class="text__lang">Язык:</p> 
+            <select class="select__header">
+                <option class="option__header" label="Русский" value="1" selected><a href="#">Русский</a></option>
+                <option class="option__header"><a href="#">English</a></option>
+            </select>
+        </div>
+    </header>
+
+    <section class="section" translate="yes">
+        <div class="right-side">
+            <p class="welcome">Добро пожаловать на платформу новых знакомств!</p>
+            <ul class="list">
+                <li class="item">Устали одиноко ходить на перерывах между парами?</li>
+                <li class="item">Никак не даётся новая тема по мат. анализу?</li>
+                <li class="item">Просто хочется хорошо провести время с интересным человеком, а все друзья заняты? </li>
+            </ul>
+            <div class="description"><span>Тогда вы попали по адресу!</span> <br>В MeetMISIS можно найти не только Study buddy, но и новых друзей, что будет полезно как для общения, так и для профессионального развития.</div>
+        </div>
+
+        <div class="left-side">
+            <p class="text-entrance">Вход в личный кабинет:</p>
+            <form id="login-form" class="form" action="" method="post">
+                <div class="item__form">
+                    <label class="label__form" for="userEmail">Логин:</label>
+                    <input class="input__form" placeholder="Введите почту" name="username" id="userEmail">
+                </div>
+                <div class="item__form">
+                    <label class="label__form" for="userPassword">Пароль:</label>
+                    <input class="input__form" placeholder="Введите пароль" type="password" name="password" id="userPassword">
+                </div>
+                <button type="submit" class="button" style="color: black">Войти</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="entrance.js"></script>
+</body>
+</html>
